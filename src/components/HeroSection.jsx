@@ -118,7 +118,7 @@ export default function HeroSection(){
         // This is a fragment --> groups elements without an extra wrapper tag
         <>
         {/* text content */}
-        <div id="home" class="hero-text-column">
+        <div id="home" className="hero-text-column">
             {/* Badge: initial = where it starts, animate = where it ends up */}
             <motion.div
                 initial = {{ opacity: 0, y: 20 }}
@@ -189,6 +189,15 @@ export default function HeroSection(){
                     onClick = {() => document.getElementById("shop")?.scrollIntoView({behavior: "smooth"})}
                 >
                     SHOP COFFEE ☕
+                </Button>
+                <Button
+                    variant = "outline"
+                    size = "lg"
+                    onClick = {() =>
+                        document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
+                    }
+                >
+                    OUR STORY
                 </Button>
             </motion.div>
 
