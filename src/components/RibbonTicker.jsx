@@ -94,7 +94,7 @@ export default function RibbonTicker(){
             <div className = "ribbon-ticker">
                 <div className = "ribbon-track">
                     {/* console log */}
-                    {console.log("items before map:", items)}
+                    {/* {console.log("items before map:", items)} */}
                     {items.map((name, i) => (
                         // console.log
                         <motion.span
